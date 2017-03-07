@@ -13,9 +13,10 @@ a[href="#"] {
     display: flex;
     flex-direction: column;
 }
-.main-header: {
+.main-header {
     flex: 0 1 auto;
 }
+
 .thumbnail-title {
     display: block;
     margin: 0;
@@ -41,7 +42,14 @@ a[href="#"] {
     max-width: 120px;
     border: 1px solid rgb(100%, 100%, 100%);
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
+    transform: scale(1.2);
 }
+
+.thumbnail-item:hover {
+    transform: scale(1.2);
+}
+
+
 .thumbnail-image {
     display: block;
     width: 100%;
@@ -67,6 +75,19 @@ a[href="#"] {
     color: white;
     text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
     font-size: 40px;
+}
+
+.hidden-detail .detail-image-container {
+    display: none;
+}
+
+.hidden-detail .thumbnail-item {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hidden-detail .thumbnail-item {
+    max-width: 80%;
 }
 @media all and (orientation: landscape) {
     .main-content {
