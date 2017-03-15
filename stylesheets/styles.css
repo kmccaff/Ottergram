@@ -64,7 +64,7 @@ a[href="#"] {
 .detail-image-frame {
     position: relative;
     text-align: center;
-    transition: transform 333ms;
+    transition: transform 333ms cubic-bezier(.43,.01,.25,.99);
 }
 
 .is-tiny {
